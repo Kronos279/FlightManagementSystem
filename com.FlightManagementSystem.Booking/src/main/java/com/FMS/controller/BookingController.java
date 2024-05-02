@@ -12,11 +12,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.FMS.BookingInfoClient.BookingInfoClient;
 import com.FMS.entity.BookingInfo;
-import com.FMS.entity.FlightDetails;
 import com.FMS.service.BookingInfoService;
-import com.FMS.serviceImpl.BookingInfoServiceImpl;
 
 @RestController
 @RequestMapping("/booking")
@@ -25,7 +22,7 @@ public class BookingController {
 	BookingInfoService service;
 	
 	@PostMapping
-	public ResponseEntity<List<BookingInfo>>  createBooking(@RequestBody List<BookingInfo> request){
+	public ResponseEntity<List<BookingInfo>> createBooking(@RequestBody List<BookingInfo> request){
 		List<BookingInfo> list=service.addBooking(request);
 		return new ResponseEntity<List<BookingInfo>>(list, HttpStatus.OK);
 	}
@@ -37,7 +34,7 @@ public class BookingController {
 	}
 	
 	@GetMapping("/pnr/{pnr}")
-	public ResponseEntity<List<BookingInfo>>  getBookingInfoByPNR(@PathVariable("pnr") String pnr) {
+	public ResponseEntity<List<BookingInfo>> getBookingInfoByPNR(@PathVariable("pnr") String pnr) {
 		List<BookingInfo> list = service.getBookingByPnr(pnr);
 		return new ResponseEntity<List<BookingInfo>>(list,HttpStatus.OK);
 		
