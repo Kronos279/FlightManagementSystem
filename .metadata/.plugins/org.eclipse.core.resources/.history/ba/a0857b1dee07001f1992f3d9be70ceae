@@ -1,0 +1,7 @@
+package com.FMS.service;
+
+
+public interface BookingInfoService {
+
+	public BookingInfo addBooking(BookingInfo bookinginfo);
+}

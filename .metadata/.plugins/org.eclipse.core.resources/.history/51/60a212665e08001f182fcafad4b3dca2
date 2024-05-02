@@ -1,0 +1,8 @@
+package com.FMS.BookingInfoClient;
+
+import org.springframework.cloud.openfeign.FeignClient;
+
+@FeignClient(name="com.FlightManagementSystem.FlightDetails")
+public interface BookingInfoClient {
+
+}

@@ -1,0 +1,13 @@
+package com.FMS.service;
+
+import java.util.List;
+
+import com.FMS.entity.FlightDetails;
+
+public interface FlightDetailsService {
+	
+	public List<FlightDetails> getAll();
+	public FlightDetails getFlightDetailsById(long id);
+	
+
+}

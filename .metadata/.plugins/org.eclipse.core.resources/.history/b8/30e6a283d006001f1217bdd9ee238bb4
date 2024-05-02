@@ -1,0 +1,8 @@
+package com.FMS.service;
+
+public interface FlightDetailsService {
+	
+	public List<FlightDetails> getAll(;)
+	
+
+}

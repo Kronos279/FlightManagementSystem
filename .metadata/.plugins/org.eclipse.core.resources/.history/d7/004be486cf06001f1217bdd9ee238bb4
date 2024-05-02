@@ -1,0 +1,9 @@
+package com.FMS.repository;
+
+import org.springframework.stereotype.Repository;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+@Repository
+public interface FlightDetailsRepository extends JpaRepository<FlightDetails, Long> {
+    // Define additional custom methods here if needed
+}

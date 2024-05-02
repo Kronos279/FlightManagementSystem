@@ -1,0 +1,44 @@
+package com.FMS.serviceImpl;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.FMS.entity.FlightDetails;
+import com.FMS.repository.FlightDetailsRepository;
+import com.FMS.service.FlightDetailsService;
+
+public class FlightDetailsServiceImpl implements FlightDetailsService {
+
+	@Autowired 
+	FlightDetailsRepository repo;
+
+	@Override
+	public List<FlightDetails> getAll() {
+		List<FlightDetails> list = repo.findAll();
+		return null;
+	}
+
+	@Override
+	public FlightDetails getFlightDetailsById(long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public FlightDetails addFlightDetails(FlightDetails flightdetails) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public FlightDetails deleteFlightDetails(long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+	
+	
+}

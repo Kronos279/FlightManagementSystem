@@ -1,0 +1,9 @@
+package com.FMS.service;
+
+import com.FMS.entity.BookingInfo;
+
+public interface BookingInfoService {
+
+	public BookingInfo addBooking(BookingInfo bookinginfo);
+	public BookingInfo getBookingInfoById(String id);
+}

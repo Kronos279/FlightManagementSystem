@@ -1,0 +1,9 @@
+package com.FMS.repository;
+
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+import com.FMS.entity.BookingInfo;
+
+public interface BookingInfoRepository extends MongoRepository<BookingInfo, String>{
+
+}

@@ -1,0 +1,33 @@
+package com.FMS.serviceImpl;
+
+import org.springframework.stereotype.Service;
+
+import com.FMS.service.FlightSeatService;
+
+@Service
+public class FlightSeatServiceImpl implements FlightSeatService{
+
+	@Override
+	public String createFlightSeats(int flight_id) {
+		Seat seat = new Seat();
+		for(int i=1;i<=60;i++) {
+			
+			for(int j=0;j<=4;j++) {
+				String number = String.valueOf(i);
+				String a = number.concat("A");
+				String b = number.concat("B");
+				String c = number.concat("C");
+				String d = number.concat("D");
+				String e = number.concat("E");
+				String f = number.concat("F");
+			}
+			
+		}
+		return "Successfull";
+	}
+
+	
+	
+	
+
+}

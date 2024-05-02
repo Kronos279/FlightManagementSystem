@@ -1,0 +1,16 @@
+package com.FMS.entity;
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document("BookingInfo")
+public class BookingInfo {
+	
+	@Id
+	private String booking_id;
+	private String firstName;
+	private String lastName;
+	private String gender;
+	private int flight_id;
+
+}

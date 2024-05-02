@@ -1,0 +1,13 @@
+package com.FMS.controller;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+
+import com.FMS.serviceImpl.FlightDetailsServiceImpl;
+
+@Controller
+public class FlightDetailsController {
+	
+	@Autowired
+	private FlightDetailsServiceImpl service;
+	
+}

@@ -1,0 +1,5 @@
+package com.FMS.repository;
+
+public interface FlightSeatRepository {
+
+}

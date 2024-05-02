@@ -1,0 +1,20 @@
+package com.FMS.entity;
+
+import java.util.List;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class BookingRequest {
+
+	    private int flightId;
+	    private int numberOfBookings;
+	    private List<String> firstnames;
+	    private List<String> lastnames;
+
+	   
+}

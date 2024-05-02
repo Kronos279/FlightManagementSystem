@@ -1,0 +1,5 @@
+package com.FMS.serviceImpl;
+
+public class FlightSeatServiceImpl {
+
+}

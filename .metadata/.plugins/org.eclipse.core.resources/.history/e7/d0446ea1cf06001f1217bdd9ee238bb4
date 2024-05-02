@@ -1,0 +1,9 @@
+package com.FMS.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.FMS.entity.FlightDetails;
+
+public interface FlightDetailsRepository extends JpaRepository<FlightDetails, Long>{
+
+}

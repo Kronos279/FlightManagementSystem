@@ -1,0 +1,39 @@
+package com.FMS.serviceImpl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.FMS.entity.Seat;
+import com.FMS.repository.FlightDetailsRepository;
+import com.FMS.service.FlightSeatService;
+
+@Service
+public class FlightSeatServiceImpl implements FlightSeatService{
+	
+	@Autowired
+	FlightDetailsRepository repo;
+
+	@Override
+	public String createFlightSeats(int flight_id) {
+		Seat seat = new Seat();
+		for(int i=1;i<=30;i++) {
+			for(int j=0;j<=4;j++) {
+				String number = String.valueOf(i);
+				seat.setA(number.concat("A"));
+				seat.setB(number.concat("B"));
+				seat.setC(number.concat("C"));
+				seat.setD(number.concat("D"));
+				seat.setE(number.concat("E"));
+				seat.setF(number.concat("F"));
+				
+			}
+			
+		}
+		return "Successfull";
+	}
+
+	
+	
+	
+
+}

@@ -1,0 +1,20 @@
+package com.FMS.serviceImpl;
+
+import org.springframework.stereotype.Service;
+
+import com.FMS.service.FlightSeatService;
+
+@Service
+public class FlightSeatServiceImpl implements FlightSeatService{
+
+	@Override
+	public String createFlightSeats(int flight_id) {
+		// TODO Auto-generated method stub
+		return "Successfull";
+	}
+
+	
+	
+	
+
+}
