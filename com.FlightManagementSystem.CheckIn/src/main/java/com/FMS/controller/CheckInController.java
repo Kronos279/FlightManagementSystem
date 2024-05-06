@@ -31,10 +31,10 @@ public class CheckInController {
 	
 	
 	@PostMapping
-	public ResponseEntity<?> bookSeat(@RequestBody CheckIn checkin){
-		String result = service.bookSeat(checkin);
+	public ResponseEntity<CheckIn> bookSeat(@RequestBody CheckIn checkin){
+		CheckIn result = service.bookSeat(checkin);
 		if(result!= null) {
-			return new ResponseEntity<>(HttpStatus.CREATED);
+			return new ResponseEntity<>(result,HttpStatus.CREATED);
 		}
 		else {
 			return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);

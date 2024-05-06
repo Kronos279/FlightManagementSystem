@@ -13,8 +13,7 @@ import com.FMS.entity.FlightSeat;
 public interface CheckInService {
 
 
-	public String bookSeat(CheckIn checkin);
-	List<FlightSeat> getAvailableSeats(CheckIn checkin);
+	public CheckIn bookSeat(CheckIn checkin);
 	public ResponseEntity<List<BookingInfo>> getBooking(String pnr);
 	public List<FlightSeat> getAvailableSeats(int flight_id);
 	public List<FlightSeat> getAllSeats();

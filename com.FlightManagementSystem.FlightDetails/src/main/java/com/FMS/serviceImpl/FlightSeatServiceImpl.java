@@ -16,8 +16,8 @@ public class FlightSeatServiceImpl implements FlightSeatService{
 	@Override
 	public String createFlightSeats(int flight_id) {
 		
-		for(int i=1;i<=30;i++) {	
-				FlightSeat seat;
+		for(int i=1;i<=30;i++) {
+			FlightSeat seat;
 				String num = String.valueOf(i);
 				String a = num.concat("A");
 				seat = new FlightSeat(a,flight_id);
@@ -37,14 +37,13 @@ public class FlightSeatServiceImpl implements FlightSeatService{
 				repo.save(seat);
 				String f = num.concat("F");
 				seat = new FlightSeat(f,flight_id);
-				 
+				
 				repo.save(seat);
+				
 			
 		}
 		return "Successfull";
 	}
-
-	
 	
 	
 

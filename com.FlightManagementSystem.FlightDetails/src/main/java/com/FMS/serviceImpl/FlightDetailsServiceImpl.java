@@ -6,6 +6,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.FMS.Exception.ResourceNotFoundException;
 import com.FMS.entity.FlightDetails;
 import com.FMS.entity.FlightSeat;
 import com.FMS.repository.FlightDetailsRepository;
@@ -23,18 +24,21 @@ public class FlightDetailsServiceImpl implements FlightDetailsService {
 	@Override
 	public List<FlightDetails> getAll() {
 		List<FlightDetails> list = repo.findAll();
+		if(list.isEmpty()) {
+			throw new ResourceNotFoundException("Something went wrong while fetching Flight Details.");
+		}
 		return list;
 	}
 
 	@Override
-	public FlightDetails getFlightDetailsById(int id) {
+	public FlightDetails getFlightDetailsById(int id){
 		Optional<FlightDetails> fd = repo.findById(id);
 		if(fd.isPresent()) {
 			FlightDetails flightdetails = fd.get();
 			return flightdetails;
 		}
 		else {
-			return null;
+			 throw new ResourceNotFoundException("No Flight found with the id "+id);
 		}
 	}
 

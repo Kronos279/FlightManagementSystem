@@ -24,4 +24,5 @@ public interface FlightSeatRepository extends JpaRepository<FlightSeat, Integer>
 	 	
 	 	@Query("SELECT fs FROM FlightSeat fs WHERE fs.flight_id = :flightId")
 	    List<FlightSeat> findByFlightId(int flightId);
+	 	
 }

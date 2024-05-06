@@ -9,8 +9,5 @@ public interface BookingInfoService {
 	public List<BookingInfo> addBooking(List<BookingInfo> bookings);
 	public BookingInfo getBookingInfoById(String id);
 	public List<BookingInfo> getBookingByPnr(String pnr);
-	
-	public String generatePNR();
-	public String generateRandomLetters(int num);
-	public int generateRandomNumber(int min, int max);
-}
+	public BookingInfo updateBookingInfo(BookingInfo bookingInfo);
+	}
