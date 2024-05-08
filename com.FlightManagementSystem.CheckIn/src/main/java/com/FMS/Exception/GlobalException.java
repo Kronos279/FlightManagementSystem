@@ -19,10 +19,6 @@ public class GlobalException {
 		return new ResponseEntity<ApiResponse>(apiresponse,HttpStatus.BAD_GATEWAY);
 	}
 	
-//	@ExceptionHandler(value= ResourceNotFoundException.class)
-//	public ResponseEntity<?> resourceNotFoundException(){
-//		Api
-//		return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
-//	}
+
 	
 }

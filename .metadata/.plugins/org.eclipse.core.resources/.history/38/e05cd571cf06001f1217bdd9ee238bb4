@@ -1,8 +1,0 @@
-package com.FMS.serviceImpl;
-
-import com.FMS.repository.FlightDetailsRepository;
-import com.FMS.service.FlightDetailsService;
-
-public class FlightDetailsServiceImpl implements FlightDetailsService {
-
-}

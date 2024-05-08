@@ -1,16 +1,25 @@
 package com.FMS.filter;
 
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.gateway.filter.GatewayFilter;
 import org.springframework.cloud.gateway.filter.factory.AbstractGatewayFilterFactory;
+import org.springframework.cloud.gateway.support.ServerWebExchangeUtils;
 import org.springframework.http.HttpHeaders;
+import org.springframework.http.server.reactive.ServerHttpRequest;
 import org.springframework.stereotype.Component;
+import org.springframework.web.server.ServerWebExchange;
 
 import com.FMS.util.JwtUtil;
 
+import io.jsonwebtoken.Claims;
+
 @Component
 public class AuthenticationFilter extends AbstractGatewayFilterFactory<AuthenticationFilter.Config> {
+	 private static final Logger logger = LoggerFactory.getLogger(AuthenticationFilter.class);
+
+
 
     @Autowired
     private RouteValidator validator;
@@ -37,10 +46,36 @@ public class AuthenticationFilter extends AbstractGatewayFilterFactory<Authentic
                     authHeader = authHeader.substring(7);
                 }
                 try {
-//                    //REST call to AUTH service
-//                    template.getForObject("http://IDENTITY-SERVICE//validate?token" + authHeader, String.class);
-                    jwtUtil.validateToken(authHeader);
-
+                	jwtUtil.validateToken(authHeader);
+                	Claims claims = jwtUtil.extractClaims(authHeader); // Extract claims from JWT token
+                    String role = claims.get("role", String.class);
+                	 logger.info("Role extracted from header: {}", role);
+                	 if (role != null) {
+                		 if ("ROLE_ADMIN".equals(role)) {
+                             // If role is admin, route to all microservices
+                             exchange.getAttributes().put(ServerWebExchangeUtils.GATEWAY_REQUEST_URL_ATTR,
+                                     exchange.getRequest().getURI().resolve("/"));
+                           // Route to root path
+                             return chain.filter(exchange);
+                         } else if ("ROLE_USER".equals(role)) {
+                        	 String path = exchange.getRequest().getURI().getPath();
+                        	 logger.info("String Path: {}", path);
+                             if (path.startsWith("/booking")) {
+                                 return chain.filter(exchange);
+                             }
+                             else if(path.startsWith("/checkin")) {
+                            	 return chain.filter(exchange);
+                             }
+                         else {
+                            	 throw new RuntimeException();
+                             }
+                	 }
+                	 }else {
+                		 throw new RuntimeException();
+                	 }
+                	
+             
+                	
                 } catch (Exception e) {
                     System.out.println("invalid access...!");
                     throw new RuntimeException("un authorized access to application");

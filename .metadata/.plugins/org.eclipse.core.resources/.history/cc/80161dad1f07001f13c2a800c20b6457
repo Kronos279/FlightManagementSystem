@@ -1,8 +1,0 @@
-package com.FMS.service;
-
-import com.FMS.entity.FlightDetails;
-
-public interface SearchService {
-
-	public FlightDetails getFlightDetailsByParameters();
-}

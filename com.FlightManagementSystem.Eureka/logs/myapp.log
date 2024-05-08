@@ -1,0 +1,373 @@
+09:31:02.528 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+09:31:02.538 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+09:31:06.270 [restartedMain] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+09:33:38.483 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+09:33:38.489 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+09:33:41.098 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+09:33:41.278 [restartedMain] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+09:34:04.464 [Eureka-Jersey3Client-Conn-Cleaner2] ERROR c.n.d.s.t.j.EurekaJersey3ClientImpl - Cannot clean connections
+java.lang.IllegalStateException: Client instance has been closed.
+	at org.glassfish.jersey.internal.guava.Preconditions.checkState(Preconditions.java:169)
+	at org.glassfish.jersey.client.JerseyClient.checkNotClosed(JerseyClient.java:248)
+	at org.glassfish.jersey.client.JerseyClient.getConfiguration(JerseyClient.java:363)
+	at org.glassfish.jersey.client.JerseyClient.getConfiguration(JerseyClient.java:54)
+	at com.netflix.discovery.shared.transport.jersey3.EurekaJersey3ClientImpl$ConnectionCleanerTask.run(EurekaJersey3ClientImpl.java:347)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+09:34:05.243 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+09:34:05.244 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+09:34:05.879 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+09:34:06.034 [restartedMain] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+09:34:06.050 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.cloud.netflix.eureka.server.EurekaServerInitializerConfiguration': Unsatisfied dependency expressed through field 'eurekaServerBootstrap': Error creating bean with name 'eurekaServerBootstrap' defined in class path resource [org/springframework/cloud/netflix/eureka/server/EurekaServerAutoConfiguration.class]: Unsatisfied dependency expressed through method 'eurekaServerBootstrap' parameter 1: Error creating bean with name 'eurekaServerContext': Invocation of init method failed
+09:34:06.059 [restartedMain] ERROR c.n.e.r.PeerAwareInstanceRegistryImpl - Cannot shutdown ReplicaAwareInstanceRegistry
+java.lang.NullPointerException: Cannot invoke "com.netflix.eureka.cluster.PeerEurekaNodes.shutdown()" because "this.peerEurekaNodes" is null
+	at com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl.shutdown(PeerAwareInstanceRegistryImpl.java:178)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.invokeCustomDestroyMethod(DisposableBeanAdapter.java:316)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:249)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1202)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1195)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1186)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:637)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.FMS.Application.main(Application.java:12)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+09:34:06.067 [restartedMain] WARN  o.s.b.f.s.DisposableBeanAdapter - Custom destroy method 'shutdown' on bean with name 'peerAwareInstanceRegistry' propagated an exception: java.lang.NullPointerException: Cannot invoke "com.netflix.eureka.registry.ResponseCache.stop()" because "this.responseCache" is null
+09:34:06.116 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.cloud.netflix.eureka.server.EurekaServerInitializerConfiguration': Unsatisfied dependency expressed through field 'eurekaServerBootstrap': Error creating bean with name 'eurekaServerBootstrap' defined in class path resource [org/springframework/cloud/netflix/eureka/server/EurekaServerAutoConfiguration.class]: Unsatisfied dependency expressed through method 'eurekaServerBootstrap' parameter 1: Error creating bean with name 'eurekaServerContext': Invocation of init method failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:787)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:767)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:508)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1419)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.FMS.Application.main(Application.java:12)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'eurekaServerBootstrap' defined in class path resource [org/springframework/cloud/netflix/eureka/server/EurekaServerAutoConfiguration.class]: Unsatisfied dependency expressed through method 'eurekaServerBootstrap' parameter 1: Error creating bean with name 'eurekaServerContext': Invocation of init method failed
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:542)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1335)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1165)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:784)
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'eurekaServerContext': Invocation of init method failed
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:422)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)
+	... 38 common frames omitted
+Caused by: java.lang.IllegalStateException: java.util.concurrent.RejectedExecutionException: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@1d94640[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@daf438e[Wrapped task = com.netflix.servo.monitor.StatsMonitor$$Lambda$1311/0x000000080082fc10@a0a6745]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@f38515a[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+	at com.netflix.eureka.cluster.PeerEurekaNodes.start(PeerEurekaNodes.java:105)
+	at com.netflix.eureka.DefaultEurekaServerContext.initialize(DefaultEurekaServerContext.java:67)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219)
+	... 51 common frames omitted
+Caused by: java.util.concurrent.RejectedExecutionException: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@1d94640[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@daf438e[Wrapped task = com.netflix.servo.monitor.StatsMonitor$$Lambda$1311/0x000000080082fc10@a0a6745]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@f38515a[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2065)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:833)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor.delayedExecute(ScheduledThreadPoolExecutor.java:340)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor.scheduleWithFixedDelay(ScheduledThreadPoolExecutor.java:680)
+	at com.netflix.servo.monitor.StatsMonitor.startComputingStats(StatsMonitor.java:409)
+	at com.netflix.servo.monitor.StatsMonitor.lambda$new$0(StatsMonitor.java:365)
+	at com.netflix.servo.monitor.StatsMonitor.startComputingStats(StatsMonitor.java:377)
+	at com.netflix.servo.monitor.StatsTimer.<init>(StatsTimer.java:70)
+	at com.netflix.servo.monitor.StatsTimer.<init>(StatsTimer.java:47)
+	at com.netflix.eureka.util.batcher.AcceptorExecutor.<init>(AcceptorExecutor.java:116)
+	at com.netflix.eureka.util.batcher.TaskDispatchers.createBatchingTaskDispatcher(TaskDispatchers.java:43)
+	at com.netflix.eureka.cluster.PeerEurekaNode.<init>(PeerEurekaNode.java:104)
+	at com.netflix.eureka.cluster.PeerEurekaNode.<init>(PeerEurekaNode.java:87)
+	at org.springframework.cloud.netflix.eureka.server.EurekaServerAutoConfiguration$RefreshablePeerEurekaNodes.createPeerEurekaNode(EurekaServerAutoConfiguration.java:455)
+	at com.netflix.eureka.cluster.PeerEurekaNodes.updatePeerEurekaNodes(PeerEurekaNodes.java:188)
+	at com.netflix.eureka.cluster.PeerEurekaNodes.start(PeerEurekaNodes.java:86)
+	... 59 common frames omitted
+09:34:37.840 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+09:34:37.846 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+09:34:40.581 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+09:34:40.735 [restartedMain] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+09:35:07.306 [http-nio-8761-exec-4] WARN  c.n.e.r.AbstractInstanceRegistry - DS: Registry: lease doesn't exist, registering resource: COM.FLIGHTMANAGEMENTSYSTEM.FLIGHTDETAILS - LIN-5CG2093V3P.corp.capgemini.com:com.FlightManagementSystem.FlightDetails:8081
+09:35:07.308 [http-nio-8761-exec-4] WARN  c.n.e.resources.InstanceResource - Not Found (Renew): COM.FLIGHTMANAGEMENTSYSTEM.FLIGHTDETAILS - LIN-5CG2093V3P.corp.capgemini.com:com.FlightManagementSystem.FlightDetails:8081
+09:35:08.007 [http-nio-8761-exec-8] WARN  c.n.e.r.AbstractInstanceRegistry - There is an existing lease and the existing lease's dirty timestamp 1715054707340 is greater than the one that is being registered 1715054617124
+09:35:08.008 [http-nio-8761-exec-8] WARN  c.n.e.r.AbstractInstanceRegistry - Using the existing instanceInfo instead of the new instanceInfo as the registrant
+09:36:15.033 [restartedMain] INFO  com.FMS.Application - Starting Application using Java 17.0.10 with PID 15712 (C:\Users\ayadav2\FlightManagementSystem\com.FlightManagementSystem.Eureka\target\classes started by ayadav2 in C:\Users\ayadav2\FlightManagementSystem\com.FlightManagementSystem.Eureka)
+09:36:15.035 [restartedMain] INFO  com.FMS.Application - No active profile set, falling back to 1 default profile: "default"
+09:36:15.369 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=3c8deffe-9cc2-3611-b9a0-a889a3ca72bc
+09:36:15.376 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+09:36:15.377 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+09:36:15.436 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8761 (http)
+09:36:15.438 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8761"]
+09:36:15.439 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+09:36:15.440 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+09:36:15.487 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+09:36:15.489 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 450 ms
+09:36:15.635 [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+09:36:15.637 [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+09:36:15.637 [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+09:36:15.637 [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+09:36:15.865 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+09:36:15.994 [restartedMain] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+09:36:15.998 [restartedMain] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+09:36:15.999 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+09:36:15.999 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Client configured to neither register nor query for data.
+09:36:16.000 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1715054776000 with initial instances count: 0
+09:36:16.004 [restartedMain] INFO  c.n.e.DefaultEurekaServerContext - Initializing ...
+09:36:16.005 [restartedMain] INFO  c.n.eureka.cluster.PeerEurekaNodes - Adding new peer nodes [http://localhost:8761/eureka/]
+09:36:16.009 [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+09:36:16.010 [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+09:36:16.010 [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+09:36:16.010 [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+09:36:16.015 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.cloud.netflix.eureka.server.EurekaServerInitializerConfiguration': Unsatisfied dependency expressed through field 'eurekaServerBootstrap': Error creating bean with name 'eurekaServerBootstrap' defined in class path resource [org/springframework/cloud/netflix/eureka/server/EurekaServerAutoConfiguration.class]: Unsatisfied dependency expressed through method 'eurekaServerBootstrap' parameter 1: Error creating bean with name 'eurekaServerContext': Invocation of init method failed
+09:36:16.018 [restartedMain] ERROR c.n.e.r.PeerAwareInstanceRegistryImpl - Cannot shutdown ReplicaAwareInstanceRegistry
+java.lang.NullPointerException: Cannot invoke "com.netflix.eureka.cluster.PeerEurekaNodes.shutdown()" because "this.peerEurekaNodes" is null
+	at com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl.shutdown(PeerAwareInstanceRegistryImpl.java:178)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.invokeCustomDestroyMethod(DisposableBeanAdapter.java:316)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:249)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1202)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1195)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1186)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:637)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.FMS.Application.main(Application.java:12)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+09:36:16.022 [restartedMain] WARN  o.s.b.f.s.DisposableBeanAdapter - Custom destroy method 'shutdown' on bean with name 'peerAwareInstanceRegistry' propagated an exception: java.lang.NullPointerException: Cannot invoke "com.netflix.eureka.registry.ResponseCache.stop()" because "this.responseCache" is null
+09:36:16.024 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+09:36:16.025 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+09:36:16.026 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+09:36:16.040 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+09:36:16.064 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.cloud.netflix.eureka.server.EurekaServerInitializerConfiguration': Unsatisfied dependency expressed through field 'eurekaServerBootstrap': Error creating bean with name 'eurekaServerBootstrap' defined in class path resource [org/springframework/cloud/netflix/eureka/server/EurekaServerAutoConfiguration.class]: Unsatisfied dependency expressed through method 'eurekaServerBootstrap' parameter 1: Error creating bean with name 'eurekaServerContext': Invocation of init method failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:787)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:767)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:508)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1419)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.FMS.Application.main(Application.java:12)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'eurekaServerBootstrap' defined in class path resource [org/springframework/cloud/netflix/eureka/server/EurekaServerAutoConfiguration.class]: Unsatisfied dependency expressed through method 'eurekaServerBootstrap' parameter 1: Error creating bean with name 'eurekaServerContext': Invocation of init method failed
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:542)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1335)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1165)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:784)
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'eurekaServerContext': Invocation of init method failed
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:422)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)
+	... 38 common frames omitted
+Caused by: java.lang.IllegalStateException: java.util.concurrent.RejectedExecutionException: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@66777d5f[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@4dcc5e54[Wrapped task = com.netflix.servo.monitor.StatsMonitor$$Lambda$1311/0x000000080082bc10@334de8a2]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@6165ef5c[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 4]
+	at com.netflix.eureka.cluster.PeerEurekaNodes.start(PeerEurekaNodes.java:105)
+	at com.netflix.eureka.DefaultEurekaServerContext.initialize(DefaultEurekaServerContext.java:67)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219)
+	... 51 common frames omitted
+Caused by: java.util.concurrent.RejectedExecutionException: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@66777d5f[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@4dcc5e54[Wrapped task = com.netflix.servo.monitor.StatsMonitor$$Lambda$1311/0x000000080082bc10@334de8a2]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@6165ef5c[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 4]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2065)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:833)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor.delayedExecute(ScheduledThreadPoolExecutor.java:340)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor.scheduleWithFixedDelay(ScheduledThreadPoolExecutor.java:680)
+	at com.netflix.servo.monitor.StatsMonitor.startComputingStats(StatsMonitor.java:409)
+	at com.netflix.servo.monitor.StatsMonitor.lambda$new$0(StatsMonitor.java:365)
+	at com.netflix.servo.monitor.StatsMonitor.startComputingStats(StatsMonitor.java:377)
+	at com.netflix.servo.monitor.StatsTimer.<init>(StatsTimer.java:70)
+	at com.netflix.servo.monitor.StatsTimer.<init>(StatsTimer.java:47)
+	at com.netflix.eureka.util.batcher.AcceptorExecutor.<init>(AcceptorExecutor.java:116)
+	at com.netflix.eureka.util.batcher.TaskDispatchers.createBatchingTaskDispatcher(TaskDispatchers.java:43)
+	at com.netflix.eureka.cluster.PeerEurekaNode.<init>(PeerEurekaNode.java:104)
+	at com.netflix.eureka.cluster.PeerEurekaNode.<init>(PeerEurekaNode.java:87)
+	at org.springframework.cloud.netflix.eureka.server.EurekaServerAutoConfiguration$RefreshablePeerEurekaNodes.createPeerEurekaNode(EurekaServerAutoConfiguration.java:455)
+	at com.netflix.eureka.cluster.PeerEurekaNodes.updatePeerEurekaNodes(PeerEurekaNodes.java:188)
+	at com.netflix.eureka.cluster.PeerEurekaNodes.start(PeerEurekaNodes.java:86)
+	... 59 common frames omitted
+09:36:53.704 [restartedMain] INFO  com.FMS.Application - Starting Application using Java 17.0.10 with PID 6284 (C:\Users\ayadav2\FlightManagementSystem\com.FlightManagementSystem.Eureka\target\classes started by ayadav2 in C:\Users\ayadav2\FlightManagementSystem\com.FlightManagementSystem.Eureka)
+09:36:53.708 [restartedMain] INFO  com.FMS.Application - No active profile set, falling back to 1 default profile: "default"
+09:36:53.780 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+09:36:53.781 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+09:36:55.224 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=3c8deffe-9cc2-3611-b9a0-a889a3ca72bc
+09:36:55.305 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+09:36:55.309 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+09:36:55.827 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8761 (http)
+09:36:55.842 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8761"]
+09:36:55.845 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+09:36:55.845 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+09:36:55.945 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+09:36:55.946 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2164 ms
+09:36:57.061 [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+09:36:57.063 [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+09:36:57.275 [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+09:36:57.276 [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+09:36:58.259 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+09:36:58.443 [restartedMain] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+09:36:58.463 [restartedMain] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+09:36:58.496 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+09:36:58.496 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Client configured to neither register nor query for data.
+09:36:58.506 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1715054818505 with initial instances count: 0
+09:36:58.564 [restartedMain] INFO  c.n.e.DefaultEurekaServerContext - Initializing ...
+09:36:58.567 [restartedMain] INFO  c.n.eureka.cluster.PeerEurekaNodes - Adding new peer nodes [http://localhost:8761/eureka/]
+09:36:58.691 [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+09:36:58.692 [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+09:36:58.692 [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+09:36:58.692 [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+09:36:58.741 [restartedMain] INFO  c.n.eureka.cluster.PeerEurekaNodes - Replica node URL:  http://localhost:8761/eureka/
+09:36:58.749 [restartedMain] INFO  c.n.e.r.AbstractInstanceRegistry - Finished initializing remote region registries. All known remote regions: []
+09:36:58.750 [restartedMain] INFO  c.n.e.DefaultEurekaServerContext - Initialized
+09:36:58.757 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+09:36:58.821 [restartedMain] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application COM.FLIGHTMANAGEMENTSYSTEM.EUREKA with eureka with status UP
+09:36:58.823 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8761"]
+09:36:58.834 [Thread-13] INFO  o.s.c.n.e.s.EurekaServerBootstrap - isAws returned false
+09:36:58.834 [Thread-13] INFO  o.s.c.n.e.s.EurekaServerBootstrap - Initialized server context
+09:36:58.834 [Thread-13] INFO  c.n.e.r.PeerAwareInstanceRegistryImpl - Got 1 instances from neighboring DS node
+09:36:58.835 [Thread-13] INFO  c.n.e.r.PeerAwareInstanceRegistryImpl - Renew threshold is: 1
+09:36:58.835 [Thread-13] INFO  c.n.e.r.PeerAwareInstanceRegistryImpl - Changing status to UP
+09:36:58.841 [Thread-13] INFO  o.s.c.n.e.s.EurekaServerInitializerConfiguration - Started Eureka Server
+09:36:58.851 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8761 (http) with context path ''
+09:36:58.853 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8761
+09:36:58.991 [restartedMain] INFO  com.FMS.Application - Started Application in 5.938 seconds (process running for 7.579)
+09:36:59.354 [RMI TCP Connection(3)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+09:36:59.355 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+09:36:59.356 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+09:37:05.493 [http-nio-8761-exec-1] WARN  c.n.e.r.AbstractInstanceRegistry - DS: Registry: lease doesn't exist, registering resource: COM.FLIGHTMANAGEMENTSYSTEM.FLIGHTDETAILS - LIN-5CG2093V3P.corp.capgemini.com:com.FlightManagementSystem.FlightDetails:8081
+09:37:05.494 [http-nio-8761-exec-1] WARN  c.n.e.resources.InstanceResource - Not Found (Renew): COM.FLIGHTMANAGEMENTSYSTEM.FLIGHTDETAILS - LIN-5CG2093V3P.corp.capgemini.com:com.FlightManagementSystem.FlightDetails:8081
+09:37:05.691 [http-nio-8761-exec-4] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance COM.FLIGHTMANAGEMENTSYSTEM.FLIGHTDETAILS/LIN-5CG2093V3P.corp.capgemini.com:com.FlightManagementSystem.FlightDetails:8081 with status UP (replication=false)
+09:37:06.402 [http-nio-8761-exec-5] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance COM.FLIGHTMANAGEMENTSYSTEM.FLIGHTDETAILS/LIN-5CG2093V3P.corp.capgemini.com:com.FlightManagementSystem.FlightDetails:8081 with status UP (replication=true)
+09:37:43.836 [http-nio-8761-exec-5] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance COM.FLIGHTMANAGEMENTSYSTEM.FLIGHTDETAILS/LIN-5CG2093V3P.corp.capgemini.com:com.FlightManagementSystem.FlightDetails:8081 with status DOWN (replication=false)
+09:37:44.356 [http-nio-8761-exec-7] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance COM.FLIGHTMANAGEMENTSYSTEM.FLIGHTDETAILS/LIN-5CG2093V3P.corp.capgemini.com:com.FlightManagementSystem.FlightDetails:8081 with status DOWN (replication=true)
+09:37:48.845 [http-nio-8761-exec-10] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance COM.FLIGHTMANAGEMENTSYSTEM.FLIGHTDETAILS/LIN-5CG2093V3P.corp.capgemini.com:com.FlightManagementSystem.FlightDetails:8081 with status UP (replication=false)
+09:37:49.357 [http-nio-8761-exec-2] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance COM.FLIGHTMANAGEMENTSYSTEM.FLIGHTDETAILS/LIN-5CG2093V3P.corp.capgemini.com:com.FlightManagementSystem.FlightDetails:8081 with status UP (replication=true)
+09:37:58.836 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+09:38:58.836 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 5ms
+09:39:58.837 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 7ms
+09:40:58.837 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 6ms
+09:41:26.947 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+09:41:26.951 [Thread-1] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application COM.FLIGHTMANAGEMENTSYSTEM.EUREKA with eureka with status DOWN
+09:41:26.957 [Thread-1] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8761"]
+09:41:26.977 [Thread-1] INFO  o.s.c.n.e.s.EurekaServerBootstrap - Shutting down Eureka Server..
+09:41:26.983 [Thread-1] INFO  c.n.e.DefaultEurekaServerContext - Shutting down ...
+09:41:27.000 [Thread-1] INFO  c.n.e.DefaultEurekaServerContext - Shut down
+09:41:27.000 [Thread-1] INFO  o.s.c.n.e.s.EurekaServerBootstrap - Eureka Service is now shutdown...
+09:41:27.001 [Thread-1] INFO  c.n.e.DefaultEurekaServerContext - Shutting down ...
+09:41:27.015 [Thread-1] INFO  c.n.e.DefaultEurekaServerContext - Shut down
+09:41:27.030 [Thread-1] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+09:41:27.032 [Thread-1] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient

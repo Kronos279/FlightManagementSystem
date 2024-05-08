@@ -1,9 +1,0 @@
-package com.FMS.service;
-import org.springframework.beans.factory.annotation.Autowired;
-import com.FMS.repository.FlightDetailsRepository;
-public interface FlightDetailsService {
-	
-	@Autowired FlightDetailsRepository repo;
-	
-
-}

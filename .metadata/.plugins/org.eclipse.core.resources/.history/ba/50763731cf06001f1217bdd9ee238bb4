@@ -1,7 +1,0 @@
-package com.FMS.repository;
-
-import org.springframework.stereotype.Repository;
-
-public interface FlightDetailsRepository extends jpa {
-
-}

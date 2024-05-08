@@ -1,6 +1,0 @@
-package com.FMS.controller;
-
-@Controller
-public class FlightDetailsController {
-
-}

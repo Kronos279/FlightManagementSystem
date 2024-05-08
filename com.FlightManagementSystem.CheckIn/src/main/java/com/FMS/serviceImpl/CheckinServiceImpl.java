@@ -16,7 +16,6 @@ import com.FMS.entity.FlightSeat;
 import com.FMS.repository.CheckInRepository;
 import com.FMS.repository.FlightSeatRepository;
 import com.FMS.service.CheckInService;
-import com.netflix.discovery.converters.Auto;
 
 @Service
 public class CheckinServiceImpl implements CheckInService {
@@ -42,7 +41,6 @@ public class CheckinServiceImpl implements CheckInService {
 		BookingInfo info = client.getBooking(checkin.getBooking_id()).getBody();
 		Optional<CheckIn> seat = repo_check.findById(checkin.getBooking_id());
 			CheckIn seat1 = seat.get();
-			System.out.println(seat1.getBooingInfo());
 			info.setSeat_id(seat1.getSeat_id());
 			FlightSeat seatnumber = repo.findById(seat1.getSeat_id()).get();
 			info.setSeat_number(seatnumber.getSeatNumber());
