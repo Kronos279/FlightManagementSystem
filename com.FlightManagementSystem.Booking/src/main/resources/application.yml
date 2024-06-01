@@ -1,0 +1,10 @@
+openapi:
+  service:
+    title: BOOKING-SERVICE doc # title that you will want to display in the Swagger UI
+    version: 1.0.0
+    url: http://localhost:8083
+springdoc:
+  api-docs:
+    path: /booking/api/v3/api-docs  
+  swagger-ui:
+    path: /booking/api/swagger-ui.html

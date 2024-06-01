@@ -19,5 +19,5 @@ public class CheckIn {
 	private int flight_id;
 	private int seat_id;
 
-	transient List<BookingInfo> booingInfo;
+	transient BookingInfo booingInfo;
 }

@@ -16,6 +16,6 @@ public interface CheckInService {
 	public CheckIn bookSeat(CheckIn checkin);
 	public ResponseEntity<List<BookingInfo>> getBooking(String pnr);
 	public List<FlightSeat> getAvailableSeats(int flight_id);
-	public List<FlightSeat> getAllSeats();
+	public List<FlightSeat> getAllSeats(int flight_id);
 	
 }

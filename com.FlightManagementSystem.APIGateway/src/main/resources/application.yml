@@ -1,0 +1,91 @@
+#spring:
+#  application:
+#    name: apigw
+#  cloud:
+#    gateway:
+#      globalcors:
+#        cors-configurations:
+#          '[/**]':
+#            allowedOrigins: "*"
+#            allowedMethods:
+#              - GET
+#              - POST
+
+spring:
+  cloud:
+    gateway:
+      globalcors:
+        add-to-simple-url-handler-mapping: true
+
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+              - PATCH
+            allowedHeaders:
+              - "Origin"
+              - "Content-Type"
+              - "Accept"
+              - "Authorization"
+              - "User-Key"
+              - "Request-Tracker"
+              - "Session-Tracker"
+              - "X-XSRF-TOKEN"
+              - "X-IBM-CLIENT-ID"
+              - "Message-ID"
+              - "X-IBM-CLIENT-SECRET"
+      default-filters:
+        - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin, RETAIN_FIRST
+      routes:
+        - id: Search
+          uri: lb://SEARCH-SERVICE
+          predicates:
+            - Path=/search/**
+        - id: flightdetails
+          uri: lb://FLIGHTDETAILS-SERVICE
+          predicates:
+            - Path=/flightdetails/**
+        - id: booking
+          uri: lb://BOOKING-SERVICE
+          predicates:
+            - Path=/booking/**
+        - id: checkin
+          uri: lb://CHECKIN-SERVICE
+          predicates:
+            - Path=/checkin/**     
+        - id: auth
+          uri: lb://AUTH-SERVICE
+          predicates:
+            - Path=/auth/**
+              
+            
+springdoc:
+  enable-native-support: true
+  api-docs:
+    enabled: true
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui.html
+    config-url: /v3/api-docs/swagger-config
+    urls:
+      - url: /v3/api-docs
+        name: API Gateway Service
+ 
+      - url: /search/api/v3/api-docs
+        name: SEARCH-SERVICE
+        
+      - url: /flightdetails/api/v3/api-docs
+        name: FLIGHTDETAILS-SERVICE
+      
+      - url: /booking/api/v3/api-docs
+        name: BOOKING-SERVICE
+        
+      - url: /checkin/api/v3/api-docs
+        name: CHECKIN-SERVICE  
+        
+      - url: /auth/api/v3/api-docs
+        name: AUTH-SERVICE  

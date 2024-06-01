@@ -1,6 +1,6 @@
 package com.FMS.entity;
-
 import java.sql.Date;
+import java.time.LocalDate;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -21,7 +21,8 @@ public class FlightDetails {
 	private String flight_number;
 	private String source;
 	private String destination;
-	private Date date;
+	private LocalDate date;
 	private String departure_time;
-	private double fare;
+	private String arrival_time;
+	private Double fare;
 }

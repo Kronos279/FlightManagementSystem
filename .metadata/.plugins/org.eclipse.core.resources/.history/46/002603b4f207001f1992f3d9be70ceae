@@ -1,2 +1,0 @@
-spring.application.name=com.FlightManagementSystem.Booking
-spring.data.mongodb.uri=mongodb://localhost:27017/FlightManagementSystem

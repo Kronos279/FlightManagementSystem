@@ -1,5 +1,0 @@
-package com.FMS.repository;
-
-public interface BookingInfoRepository {
-
-}

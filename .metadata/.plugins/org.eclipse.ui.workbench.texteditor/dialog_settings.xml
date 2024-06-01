@@ -10,8 +10,9 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value=""/>
+		<item key="selection" value="Role extracted from header"/>
 		<list key="findhistory">
+			<item value="Role extracted from header"/>
 			<item value="role"/>
 		</list>
 		<list key="replacehistory">

@@ -1,5 +1,0 @@
-package com.FMS.BookingInfoClient;
-
-public interface BookingInfoClient {
-
-}

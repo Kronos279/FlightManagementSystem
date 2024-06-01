@@ -1,0 +1,10 @@
+openapi:
+  service:
+    title: FLIGHTDETAILS-SERVICE doc # title that you will want to display in the Swagger UI
+    version: 1.0.0
+    url: http://localhost:8081
+springdoc:
+  api-docs:
+    path: /flightdetails/api/v3/api-docs
+  swagger-ui:
+    path: /flightdetails/api/swagger-ui.html

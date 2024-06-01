@@ -10,6 +10,7 @@ public interface FlightDetailsService {
 	public FlightDetails getFlightDetailsById(int id);
 	public FlightDetails addFlightDetails(FlightDetails flightdetails);
 	public FlightDetails deleteFlightDetails(int id);
+	public FlightDetails updateFlightDetails(int id,FlightDetails updatedDetails);
 	
 
 }

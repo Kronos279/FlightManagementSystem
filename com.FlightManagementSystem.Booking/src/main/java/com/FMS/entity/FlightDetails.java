@@ -1,6 +1,6 @@
 package com.FMS.entity;
 
-import java.sql.Date;
+import java.util.Date;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -17,6 +17,7 @@ public class FlightDetails {
 	private String destination;
 	private Date date;
 	private String departure_time;
+	private String arrival_time;
 	private double fare;
 	
 }

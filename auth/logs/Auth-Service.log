@@ -1,0 +1,12 @@
+12:51:31.602 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=19h16m6s529ms764µs900ns).
+12:53:52.184 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+12:54:47.552 [RMI TCP Connection(948)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+12:54:47.557 [RMI TCP Connection(948)-127.0.0.1] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application COM.FLIGHTMANAGEMENTSYSTEM.AUTH-SERVICE with eureka with status DOWN
+12:54:47.559 [RMI TCP Connection(948)-127.0.0.1] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1717226687559, current=DOWN, previous=UP]
+12:54:47.561 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_COM.FLIGHTMANAGEMENTSYSTEM.AUTH-SERVICE/LIN-5CG2093V3P.corp.capgemini.com:com.FlightManagementSystem.Auth-Service:8889: registering service...
+12:54:47.572 [RMI TCP Connection(948)-127.0.0.1] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8889"]
+12:54:47.576 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_COM.FLIGHTMANAGEMENTSYSTEM.AUTH-SERVICE/LIN-5CG2093V3P.corp.capgemini.com:com.FlightManagementSystem.Auth-Service:8889 - registration status: 204
+12:54:47.618 [RMI TCP Connection(948)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+12:54:47.633 [RMI TCP Connection(948)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+12:54:47.641 [RMI TCP Connection(948)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+12:54:47.642 [RMI TCP Connection(948)-127.0.0.1] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...

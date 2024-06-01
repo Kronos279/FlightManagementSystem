@@ -1,5 +1,0 @@
-package com.FMS.Exception;
-
-public class GlobalExceptionHandler {
-
-}

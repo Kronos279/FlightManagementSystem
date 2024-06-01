@@ -7,19 +7,16 @@ import org.springframework.cloud.gateway.filter.GatewayFilter;
 import org.springframework.cloud.gateway.filter.factory.AbstractGatewayFilterFactory;
 import org.springframework.cloud.gateway.support.ServerWebExchangeUtils;
 import org.springframework.http.HttpHeaders;
-import org.springframework.http.server.reactive.ServerHttpRequest;
 import org.springframework.stereotype.Component;
-import org.springframework.web.server.ServerWebExchange;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 import com.FMS.util.JwtUtil;
 
 import io.jsonwebtoken.Claims;
-
+@CrossOrigin
 @Component
 public class AuthenticationFilter extends AbstractGatewayFilterFactory<AuthenticationFilter.Config> {
 	 private static final Logger logger = LoggerFactory.getLogger(AuthenticationFilter.class);
-
-
 
     @Autowired
     private RouteValidator validator;
@@ -60,25 +57,21 @@ public class AuthenticationFilter extends AbstractGatewayFilterFactory<Authentic
                          } else if ("ROLE_USER".equals(role)) {
                         	 String path = exchange.getRequest().getURI().getPath();
                         	 logger.info("String Path: {}", path);
-                             if (path.startsWith("/booking")) {
+                             if (path.startsWith("/booking") || path.startsWith("/checkin")) {
                                  return chain.filter(exchange);
                              }
-                             else if(path.startsWith("/checkin")) {
-                            	 return chain.filter(exchange);
-                             }
-                         else {
-                            	 throw new RuntimeException();
-                             }
-                	 }
+		                         else {
+		                            	 throw new RuntimeException();
+		                             }
+                         }
                 	 }else {
-                		 throw new RuntimeException();
+                	 		throw new RuntimeException();
                 	 }
                 	
-             
-                	
-                } catch (Exception e) {
-                    System.out.println("invalid access...!");
-                    throw new RuntimeException("un authorized access to application");
+                 	
+                }catch (Exception e) {
+                    logger.error("Un Authorised Access....!!!");
+                    throw new RuntimeException("Un authorized access to application");
                 }
             }
             return chain.filter(exchange);

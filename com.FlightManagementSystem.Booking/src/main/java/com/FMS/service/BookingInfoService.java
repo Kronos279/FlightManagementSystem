@@ -10,4 +10,5 @@ public interface BookingInfoService {
 	public BookingInfo getBookingInfoById(String id);
 	public List<BookingInfo> getBookingByPnr(String pnr);
 	public BookingInfo updateBookingInfo(BookingInfo bookingInfo);
+	public int getBookingCountByFlightId(int id);
 	}

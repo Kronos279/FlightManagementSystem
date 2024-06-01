@@ -6,6 +6,8 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\ayadav2\FlightManagementSystem\auth"/>
+			<item value="C:\Users\ayadav2\FlightManagementSystem\com.FlightManagementSystem.APIGateway"/>
 			<item value="C:\Users\ayadav2\Downloads\AUTH-SERVICE (1)\auth"/>
 		</list>
 		<list key="projectNameTemplate">

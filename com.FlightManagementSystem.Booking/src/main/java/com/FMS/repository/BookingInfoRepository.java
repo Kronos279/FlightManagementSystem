@@ -18,4 +18,7 @@ public interface BookingInfoRepository extends MongoRepository<BookingInfo, Stri
     BookingInfo updateBookingBySeatNumber(String seatNumber, BookingInfo updatedBookingInfo);
 	
 	public List<BookingInfo> findByPnrNumber(String pnrNumber);
+	
+	@Query(value = "{ 'flight_id': ?0, 'booking_id': { $ne: null } }", count = true)
+	 int countBookingsByFlightId(int flightId);
 }

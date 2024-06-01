@@ -8,7 +8,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class BookingInfo {
-
+	
+	
 	private String booking_id;
 	private String firstName;
 	private String lastName;
